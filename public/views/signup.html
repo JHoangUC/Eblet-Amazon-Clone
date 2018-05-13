@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>éblet Go</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="login">
+      <h1><a href="/">éblet</a></h1>
+        <label for="username">Username:</label>
+        <input class="formInput" id="username" autocomplete="off" type="text" required="true" name="username" value="" placeholder="Username">
+        <label for="password">Password:</label>
+        <input class="formInput" id="password" autocomplete="off" type="password" required="true" name="username" value="" placeholder="Password">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input class="formInput" autocomplete="off" id="confirmPassword" type="password" required="true" name="username" value="" placeholder="Password">
+        <input id="loginButton" type="button" value="Sign up" />
+        <p id="errorMessage"></p>
+        <p class="text-center">Already have an account? <br><a href="/login" id="signup">Click Here</a></p>
+    </div>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

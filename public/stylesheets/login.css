@@ -1,0 +1,98 @@
+body{
+  margin:0;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
+}
+h1{
+  font-weight: normal;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  font-size: 100px;
+  margin: 0px;
+  color: #16a5f9;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+label{
+  display: block;
+  padding: 10px 0px;
+}
+#username, #password,#confirmPassword,#loginButton{
+  border: #16a5f9 solid 2px;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width: calc(100% - 24px);
+}
+#loginButton{
+  background-color: #16a5f9;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  border: none
+}
+#loginButton:active{
+  background-color: #0085d9;
+  border: none;
+}
+#errorMessage{
+  color: red;
+  text-align: center;
+}
+#submit{
+  color: #666;
+  display: block;
+  font-size: inherit;
+  font-weight:normal;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px #16a5f9 solid;
+  padding: 7px 0px;
+}
+.text-center{
+  text-align: center;
+}
+#signup{
+  color: #16a5f9;
+  text-decoration: underline;
+  font: 'Roboto', sans-serif;
+}
+input[type="submit"]{
+  font-weight: 300;
+}
+.search{
+  display: inline;
+  padding-left: 30%;
+}
+.navRight{
+  float: right;
+}
+.item{
+  max-width: 220px;
+  overflow: auto;
+  border: 10px solid #777;
+  padding: 7px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 20px;
+}
+.itemImage{
+  width: 100%;
+}
+.itemName{
+  text-align: center;
+}
+.login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 3px #16a5f9 solid; */
+  width: 320px;
+  border-radius: 2px;
+  padding: 20px;
+  height: 500px;
+}

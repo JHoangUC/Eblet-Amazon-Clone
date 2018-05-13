@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eblet Go</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="navBar" id="navBar">
+      <a href="/" class="main">éblet</a>
+      <a href="/cart" class="navBarRight cart">Cart</a>
+      <a href="/login" class="navBarRight" id="loginLink">Login</a>
+      <a href="/signup" class="navBarRight signupLink">Signup</a>
+      <a href="/logout" class="navBarRight" id="logout">Logout</a>
+      <a href="#" class="navBarRight" id="usernameDisplay" class="navBarRight"></a>
+      <input id="itemSearch" type="text" name="" value="" placeholder="Search">
+      <a href="/items" class="addItemLink">Add Item</a>
+      <div class="navIcon" id="navIcon" onclick="navBar(this)">
+        <div class="navIconBar"></div>
+        <div class="navIconBar"></div>
+        <div class="navIconBar"></div>
+      </div>
+    </div>
+    <div class="navBarSlideIn" id="navBarSlideInid">
+      <a href="/login" id="loginLink2">Login</a>
+      <a href="/logout" id="logout2">Logout</a>
+      <a href="/cart" class="cart">Cart</a>
+      <a href="/items" class="addItemLink">Add Item</a>
+      <a href="/signup" class="signupLink">Signup</a>
+    </div>
+    <div class="content" onclick="focusContent()">
+      <div class="allItems">
+        <div class="item" id="dog" itemNumber='1'>
+          <p class="itemName">Las Vegas</p>
+          <img class="itemImage" src="/images/item.jpg" alt="">
+          <p class="description">This is the town</p>
+        </div>
+        <div class="item" id="dog" itemNumber='2'>
+          <p class="itemName">REEEEE</p>
+          <img class="itemImage" src="/images/item.jpg" alt="">
+          <p class="description">This is the town</p>
+        </div>
+        <div class="item" id="bread" itemNumber='3'>
+          <p class="itemName">Las Vegas</p>
+          <img class="itemImage" src="/images/item.jpg" alt="">
+          <p class="description">This is the town</p>
+        </div>
+        <div class="item" id="corn" itemNumber='4'>
+          <p class="itemName">Las Vegas</p>
+          <img class="itemImage" src="/images/item.jpg" alt="">
+          <p class="description">This is the town</p>
+        </div>
+        <div class="item" id="cops" itemNumber='5'>
+          <p class="itemName">Las Vegas</p>
+          <img class="itemImage" src="/images/item.jpg" alt="">
+          <p class="description">This is the town</p>
+        </div>
+        <div class="item" id="pig" itemNumber='6'>
+          <p class="itemName">Las Vegas</p>
+          <img class="itemImage" src="/images/item.jpg" alt="">
+          <p class="description">This is the town</p>
+        </div>
+        <div class="item" id="dorks" itemNumber='7'>
+          <p class="itemName">Las Vegas</p>
+          <img class="itemImage" src="/images/item.jpg" alt="">
+          <p class="description">This is the town</p>
+        </div>
+      </div>
+    </div>
+        <script  src="js/cart.js"></script>
+    <script type="text/javascript" src="/js/homepage.js"></script>
+
+    <script type="text/javascript">
+            $("#itemSearch").on("keyup", function() {
+            var key = this.value;
+            $(".item").each(function() {
+              var name = $(this);
+              var titleName = $('.item .itemName')
+              name.toggle($('.item[itemNumber=\'' + $(this).attr('itemNumber') + '\'] .itemName').text().toLowerCase().indexOf(key.toLowerCase()) >= 0);
+            });
+        });
+      </script>
+
+  </body>
+</html>

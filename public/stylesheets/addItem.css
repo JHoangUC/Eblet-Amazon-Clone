@@ -1,0 +1,106 @@
+body{
+  margin:0;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+  font-weight: normal;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+label{
+  display: block;
+  padding: 10px 0px;
+}
+.intro{
+  background-color: #16a5f9;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+.form{
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2.5%;
+  background-color: #16a5f9;
+  border-radius: 10px;
+  margin-top: 2.5%;
+}
+input{
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+label{
+  box-sizing: border-box;
+}
+#name, #price {
+  padding: 7px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#fileStuff{
+  width: 0;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#fileSuffLabel{
+  padding: 7px;
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+img[src=""] {
+   display: none;
+}
+img{
+  /* max-height: 200px; */
+  max-width: 100%;;
+  border-radius: 4px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+textarea {
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    padding: 7px;
+    height: 120px;
+    overflow-wrap: break-word;
+}
+#submit{
+  display: none;
+  width: 0;
+  height: 0;
+}
+#submitLabel{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 5px;
+}
